@@ -7,7 +7,8 @@ import "regexp"
 // TODO: more valid characters?
 // TODO: stricter limits on domain names?
 
-// https://www.w3.org/TR/html5/forms.html#valid-e-mail-address
+// https://html.spec.whatwg.org/multipage/input.html#valid-e-mail-address
+// https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#validation
 var emailRE = regexp.MustCompile(
 	"[a-zA-Z0-9.!#$%&'*+\\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*")
 
